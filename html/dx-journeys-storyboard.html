@@ -417,7 +417,7 @@
     .itinerary-intro-card {
       display: flex;
       gap: 0;
-      background: var(--white);
+      background: var(--coral);
       border-radius: var(--radius-lg);
       margin-bottom: 24px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.08);
@@ -432,7 +432,7 @@
     .itinerary-intro-description {
       font-size: 14px;
       line-height: 1.85;
-      color: #333;
+      color: var(--white);
     }
 
     .itinerary-intro-description p {
@@ -445,12 +445,11 @@
 
     .itinerary-intro-nav {
       flex: 0 0 280px;
-      background: var(--white);
+      background: transparent;
       padding: 32px;
       display: flex;
       flex-direction: column;
       gap: 10px;
-      border-left: 1px solid #eee;
     }
 
     .intro-section-link {
@@ -458,7 +457,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 14px 16px;
-      background: var(--white);
+      background: rgba(255, 255, 255, 0.4);
       border: none;
       border-radius: 8px;
       cursor: pointer;
@@ -468,18 +467,18 @@
     }
 
     .intro-section-link:hover {
-      background: rgba(224, 112, 85, 0.08);
-    }
-
-    .intro-section-link:hover .intro-section-title {
-      color: var(--coral);
+      background: rgba(255, 255, 255, 0.6);
     }
 
     .intro-section-title {
       font-size: 14px;
       font-weight: 500;
-      color: var(--dark);
+      color: var(--coral-dark);
       transition: color 0.2s;
+    }
+
+    .intro-section-link:hover .intro-section-title {
+      color: var(--dark);
     }
 
     .intro-section-arrow {
@@ -494,13 +493,13 @@
     .intro-section-arrow svg {
       width: 16px;
       height: 22px;
-      stroke: var(--coral);
+      stroke: var(--coral-dark);
       fill: none;
       transition: stroke 0.2s;
     }
 
     .intro-section-link:hover .intro-section-arrow svg {
-      stroke: var(--coral-dark);
+      stroke: var(--dark);
     }
 
     /* Itinerary - Sticky Stacked Cards */
@@ -1065,7 +1064,7 @@
         width: 100%;
         padding: 20px;
         border-left: none;
-        border-top: 1px solid #eee;
+        border-top: 1px solid rgba(255,255,255,0.2);
         gap: 8px;
       }
 
