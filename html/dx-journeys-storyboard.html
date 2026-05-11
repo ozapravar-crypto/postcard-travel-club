@@ -302,6 +302,23 @@
       display: block;
     }
 
+    /* Section Title */
+    .section-title {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--dark);
+      margin: 0 0 24px 0;
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+    }
+
     /* Postcard Cards Grid */
     .postcards-grid {
       display: grid;
@@ -1432,6 +1449,7 @@
 
   <!-- Postcards Tab -->
   <div class="tab-content active" id="postcards">
+    <h2 class="section-title">Postcard Experiences</h2>
     <div class="postcards-grid">
       <!-- Card 1 -->
       <div class="postcard-card">
@@ -1563,6 +1581,7 @@
 
   <!-- Itinerary Tab -->
   <div class="tab-content" id="itinerary">
+    <h2 class="section-title">Day wise Itinerary</h2>
     <!-- Intro Card -->
     <div class="itinerary-intro-card">
       <div class="itinerary-intro-content">
@@ -1714,25 +1733,7 @@
 
   <!-- Terms Tab -->
   <div class="tab-content" id="terms">
-    <!-- Key Terms Highlights Bar -->
-    <div class="terms-highlights-bar">
-      <div class="terms-highlight-pill">
-        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-        6 nights included
-      </div>
-      <div class="terms-highlight-pill">
-        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-        Daily breakfast
-      </div>
-      <div class="terms-highlight-pill">
-        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-        Private transfers
-      </div>
-      <div class="terms-highlight-pill">
-        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-        English-speaking guide
-      </div>
-    </div>
+    <h2 class="section-title">Terms and Conditions</h2>
 
     <div class="terms-container">
       <!-- Inclusions -->
