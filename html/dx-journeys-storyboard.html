@@ -337,6 +337,20 @@
       left: 0;
     }
 
+    /* Postcard Grid */
+    .postcard-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 24px 0;
+    }
+
+    .postcard-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
     /* Day Header */
     .day-header {
       margin: 48px 0 20px;
@@ -683,29 +697,17 @@
   <div class="tab-content active" id="postcards">
     <h2 class="section-title">Postcard Experiences</h2>
 
-    <h3>Where the Stripes walk at dawn</h3>
-    <p>Experience the raw beauty of Kanha, India — a tiger safari through dense sal forests where the morning mist reveals nature's most magnificent predator. Wake to wild peacock calls and track Bengal tigers along ancient forest paths.</p>
-    <p><strong>Location:</strong> Kanha, India &nbsp;|&nbsp; <strong>Type:</strong> Tiger Safari</p>
-
-    <h3>Temples at the edge of time</h3>
-    <p>Journey to Siem Reap, Cambodia, where ancient Khmer temples rise from the jungle. Watch sunrise paint Angkor Wat in gold, explore the tree-wrapped ruins of Ta Prohm, and discover the enigmatic faces of Bayon.</p>
-    <p><strong>Location:</strong> Siem Reap, Cambodia &nbsp;|&nbsp; <strong>Type:</strong> Heritage</p>
-
-    <h3>Whispers of ancient gardens</h3>
-    <p>Kyoto, Japan — where zen gardens speak in silence and geishas glide through lantern-lit streets. Experience traditional tea ceremonies, wander through bamboo groves, and find peace in moss-covered temple grounds.</p>
-    <p><strong>Location:</strong> Kyoto, Japan &nbsp;|&nbsp; <strong>Type:</strong> Zen Gardens</p>
-
-    <h3>Where the sun meets the sea</h3>
-    <p>Santorini, Greece — whitewashed villages cascading down volcanic cliffs, sunsets that set the Aegean ablaze, and the taste of local wine as day turns to night. A Mediterranean dream realized.</p>
-    <p><strong>Location:</strong> Santorini, Greece &nbsp;|&nbsp; <strong>Type:</strong> Island Life</p>
-
-    <h3>Colors of the ancient medina</h3>
-    <p>Lose yourself in Marrakech, Morocco — a sensory journey through spice-scented souks, intricate riads, and the endless energy of Jemaa el-Fnaa square. Where every corner reveals a new story.</p>
-    <p><strong>Location:</strong> Marrakech, Morocco &nbsp;|&nbsp; <strong>Type:</strong> Souks</p>
-
-    <h3>At the end of the world</h3>
-    <p>Patagonia, Chile — where glaciers calve into turquoise lakes and condors soar above granite towers. Trek through Torres del Paine, witness the Perito Moreno glacier, and feel the raw power of Earth's last wilderness.</p>
-    <p><strong>Location:</strong> Patagonia, Chile &nbsp;|&nbsp; <strong>Type:</strong> Glaciers</p>
+    <div class="postcard-grid">
+      <div class="postcard-item"><img src="images/image 1514.png" alt="Postcard 1"></div>
+      <div class="postcard-item"><img src="images/image 1514.png" alt="Postcard 2"></div>
+      <div class="postcard-item"><img src="images/image 1514.png" alt="Postcard 3"></div>
+      <div class="postcard-item"><img src="images/image 1514.png" alt="Postcard 4"></div>
+      <div class="postcard-item"><img src="images/image 1514.png" alt="Postcard 5"></div>
+      <div class="postcard-item"><img src="images/image 1514.png" alt="Postcard 6"></div>
+      <div class="postcard-item"><img src="images/image 1514.png" alt="Postcard 7"></div>
+      <div class="postcard-item"><img src="images/image 1514.png" alt="Postcard 8"></div>
+      <div class="postcard-item"><img src="images/image 1514.png" alt="Postcard 9"></div>
+    </div>
 
     <div class="section-nav">
       <button class="section-nav-btn" data-goto="itinerary">
