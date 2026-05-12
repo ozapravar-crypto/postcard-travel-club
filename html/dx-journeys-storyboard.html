@@ -339,9 +339,6 @@
 
     /* Day Header */
     .day-header {
-      display: flex;
-      align-items: center;
-      gap: 16px;
       margin: 48px 0 20px;
     }
 
@@ -349,25 +346,11 @@
       margin-top: 32px;
     }
 
-    .day-number {
-      width: 48px;
-      height: 48px;
-      background: var(--coral);
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--white);
-      flex-shrink: 0;
-    }
-
-    .day-info h3 {
+    .day-header h3 {
       margin: 0 0 4px 0;
     }
 
-    .day-info span {
+    .day-header span {
       font-size: 12px;
       color: var(--gray);
     }
@@ -608,12 +591,6 @@
         font-size: 22px;
       }
 
-      .day-number {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-      }
-
       .section-nav-btn {
         padding: 12px 24px;
         font-size: 13px;
@@ -747,71 +724,50 @@
     <p>Your final days unfold at Sun Moon Lake, Taiwan's largest body of water, where indigenous Thao culture, pristine hiking trails, and serene sunrises await.</p>
 
     <div class="day-header">
-      <div class="day-number">01</div>
-      <div class="day-info">
-        <h3>Arrival in Beitou</h3>
-        <span>May 17 · Hot Springs Welcome</span>
-      </div>
+      <h3>Day 01: Arrival in Beitou</h3>
+      <span>May 17 · Hot Springs Welcome</span>
     </div>
     <p>Arrive at Taiwan Taoyuan International Airport where your DX Journeys guide awaits. Transfer to the historic hot spring district of Beitou, nestled in the volcanic hills north of Taipei. Check into your traditional Japanese-style ryokan, where mineral-rich hot springs flow directly into private baths.</p>
     <p>Spend the afternoon exploring Beitou Hot Spring Museum and the nearby Thermal Valley, where sulfurous steam rises dramatically from jade-green waters. Evening welcome dinner featuring local Taiwanese cuisine.</p>
 
     <div class="day-header">
-      <div class="day-number">02</div>
-      <div class="day-info">
-        <h3>Yehliu & Jiufen</h3>
-        <span>May 18 · Coastal Wonders</span>
-      </div>
+      <h3>Day 02: Yehliu & Jiufen</h3>
+      <span>May 18 · Coastal Wonders</span>
     </div>
     <p>Journey along Taiwan's dramatic northeast coast to Yehliu Geopark, where millennia of wind and sea have carved fantastical rock formations including the famous Queen's Head.</p>
     <p>Continue to the hillside mining town of Jiufen, said to have inspired the spirit world in Miyazaki's "Spirited Away." Wander through narrow alleyways lined with red lanterns, sampling local treats like taro balls and herbal tea. Watch sunset paint the Pacific gold before returning to Beitou for an evening hot spring soak.</p>
 
     <div class="day-header">
-      <div class="day-number">03</div>
-      <div class="day-info">
-        <h3>Yangmingshan National Park</h3>
-        <span>May 19 · Mountain Trails</span>
-      </div>
+      <h3>Day 03: Yangmingshan National Park</h3>
+      <span>May 19 · Mountain Trails</span>
     </div>
     <p>A full day exploring Yangmingshan National Park, Taiwan's most accessible volcanic landscape. Begin with a morning hike through meadows of silvergrass to Qixing Mountain, the highest peak in the Taipei basin.</p>
     <p>Descend to Xiaoyoukeng, where fumaroles vent sulfurous gases beside bubbling mud pots. Afternoon tea at a hillside café with panoramic views of Taipei below. Optional visit to a calla lily farm (seasonal) before a farewell dinner in Beitou.</p>
 
     <div class="day-header">
-      <div class="day-number">04</div>
-      <div class="day-info">
-        <h3>Journey to Sun Moon Lake</h3>
-        <span>May 20 · Into the Mountains</span>
-      </div>
+      <h3>Day 04: Journey to Sun Moon Lake</h3>
+      <span>May 20 · Into the Mountains</span>
     </div>
     <p>Depart Beitou for the scenic drive south to Sun Moon Lake, Taiwan's largest body of water. Stop en route at Puli, known as the geographic center of Taiwan, to visit a paper-making village and sample the region's famous rice wine.</p>
     <p>Arrive at your lakeside resort in the afternoon with time to settle in before sunset. Evening boat cruise across the glassy waters as the surrounding mountains turn purple in the fading light. Dinner at the resort featuring Thao indigenous cuisine.</p>
 
     <div class="day-header">
-      <div class="day-number">05</div>
-      <div class="day-info">
-        <h3>Sun Moon Lake Activities</h3>
-        <span>May 21 · Lake & Culture</span>
-      </div>
+      <h3>Day 05: Sun Moon Lake Activities</h3>
+      <span>May 21 · Lake & Culture</span>
     </div>
     <p>Wake early for the lake's famous sunrise, best viewed from Xiangshan Visitor Center. After breakfast, explore the area by bicycle on the lakeside cycling path, one of the most beautiful in Asia.</p>
     <p>Visit Wenwu Temple, dedicated to Confucius and the God of War, perched on a hillside with commanding lake views. Afternoon at leisure — choose from paddleboarding, a tea tasting experience with local Assam tea, or simply relaxing on the resort grounds.</p>
 
     <div class="day-header">
-      <div class="day-number">06</div>
-      <div class="day-info">
-        <h3>Xitou Forest</h3>
-        <span>May 22 · Ancient Trees</span>
-      </div>
+      <h3>Day 06: Xitou Forest</h3>
+      <span>May 22 · Ancient Trees</span>
     </div>
     <p>Morning departure for Xitou Nature Education Area, a pristine forest reserve at 1,150 meters elevation. Walk among towering bamboo groves and ancient cypress trees, including a 2,800-year-old sacred tree.</p>
     <p>The elevated Skywalk offers a bird's-eye view of the canopy below. Lunch at the Xitou Monster Village, a whimsical Japanese-themed hamlet at the forest entrance. Return to Sun Moon Lake for a final evening, with a farewell dinner celebrating the journey's highlights.</p>
 
     <div class="day-header">
-      <div class="day-number">07</div>
-      <div class="day-info">
-        <h3>Departure</h3>
-        <span>May 23 · Until Next Time</span>
-      </div>
+      <h3>Day 07: Departure</h3>
+      <span>May 23 · Until Next Time</span>
     </div>
     <p>Final morning at leisure on the lake. Depending on your flight time, enjoy an optional sunrise walk to Ci'en Pagoda, built by Chiang Kai-shek in memory of his mother, with sweeping views across the water.</p>
     <p>Private transfer to Taichung High Speed Rail Station or Taiwan Taoyuan International Airport, carrying memories of steaming hot springs, misty mountains, and the tranquil beauty of Taiwan's heartland.</p>
