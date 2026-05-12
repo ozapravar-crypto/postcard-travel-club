@@ -1,0 +1,2077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taiwan: Hot Springs to High Mountains | DX Journeys | Postcard Travel Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --coral: #E07055;
+      --coral-dark: #C85A45;
+      --coral-light: rgba(224, 112, 85, 0.1);
+      --blue-brand: #4A90D9;
+      --cream: #F5F3EF;
+      --dark: #1A1A1A;
+      --white: #FFFFFF;
+      --gray: #888;
+      --radius-lg: 20px;
+      --radius-md: 16px;
+      --radius-pill: 100px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Raleway', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--cream);
+      color: var(--dark);
+      line-height: 1.5;
+      padding-bottom: 80px; /* Space for sticky CTA bar */
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 24px;
+      background: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      width: 24px;
+      height: 24px;
+      background: var(--blue-brand);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-icon svg {
+      width: 12px;
+      height: 12px;
+      fill: var(--white);
+    }
+
+    .logo-text {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--blue-brand);
+      letter-spacing: 0.2px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .nav-link {
+      font-size: 11px;
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      font-size: 10px;
+      font-weight: 500;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      border: none;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--coral);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--coral-dark);
+    }
+
+    .btn-outline-white {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.6);
+      padding: 5px 12px;
+      font-size: 9px;
+    }
+
+    .btn-outline-white svg {
+      fill: var(--white);
+      width: 10px;
+      height: 10px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      padding: 0;
+      background: var(--white);
+    }
+
+    .hero {
+      position: relative;
+      height: 340px;
+      background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(128,128,128,0.3) 40%, rgba(0,0,0,0.7) 100%),
+                  url('https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=1400&q=80') center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 24px 32px;
+      color: var(--white);
+      border-radius: var(--radius-lg);
+      margin: 0 16px;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+    }
+
+    .hero-tags {
+      display: flex;
+      gap: 8px;
+    }
+
+    .hero-tag {
+      padding: 6px 12px;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: var(--radius-pill);
+      font-size: 9px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .hero-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .hero-content {
+      max-width: 480px;
+    }
+
+    .hero-headline {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .hero-description {
+      font-size: 12px;
+      line-height: 1.6;
+      opacity: 0.85;
+      margin-bottom: 20px;
+      max-width: 400px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hero-stats {
+      display: flex;
+      align-items: flex-end;
+      gap: 24px;
+    }
+
+    .hero-stat {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    .hero-stat-value {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1;
+    }
+
+    .hero-stat-value.price {
+      color: var(--coral);
+    }
+
+    .hero-stat-label {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      opacity: 0.7;
+      margin-top: 4px;
+    }
+
+    .btn-outline-dark-hero {
+      background: rgba(0,0,0,0.3);
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.4);
+      backdrop-filter: blur(4px);
+    }
+
+    .btn-outline-dark-hero:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: rgba(255,255,255,0.6);
+    }
+
+    .btn-outline-dark-hero svg {
+      fill: var(--white);
+      width: 12px;
+      height: 12px;
+    }
+
+    /* Tabs - Folder Style */
+    .tabs-section {
+      background: var(--cream);
+      padding: 0;
+      position: sticky;
+      top: 44px;
+      z-index: 90;
+    }
+
+    .tabs {
+      display: flex;
+      align-items: stretch;
+      background: var(--cream);
+      width: 100%;
+    }
+
+    .tab {
+      flex: 1;
+      padding: 14px 24px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
+      background: var(--white);
+      transition: all 0.2s ease;
+      color: var(--coral);
+      border-bottom: 2px solid var(--coral);
+      position: relative;
+    }
+
+    .tab:not(.active):hover {
+      background: rgba(224, 112, 85, 0.08);
+    }
+
+    .tab.active {
+      color: var(--white);
+      background: var(--coral);
+      border-bottom: 2px solid transparent;
+    }
+
+    /* Tab Content - Connects to active folder tab */
+    .tab-content {
+      display: none;
+      padding: 24px;
+      background: #EFE9E4;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    /* Section Title */
+    .section-title {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--dark);
+      margin: 0 0 24px 0;
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+    }
+
+    /* Postcard Cards Grid */
+    .postcards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .postcard-card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .postcard-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    }
+
+    .postcard-card-image {
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      border-radius: var(--radius-md) var(--radius-md) 0 0;
+    }
+
+    .postcard-card-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .postcard-location {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--coral);
+      margin-bottom: 8px;
+    }
+
+    .postcard-title {
+      font-family: 'Lora', serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.4;
+      color: var(--dark);
+      margin-bottom: 14px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .postcard-tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border: 1.5px solid var(--coral);
+      color: var(--coral);
+      border-radius: var(--radius-pill);
+      margin-bottom: 16px;
+      width: fit-content;
+      background: transparent;
+    }
+
+    .postcard-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .postcard-icons {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .postcard-icon {
+      width: 18px;
+      height: 18px;
+      color: var(--gray);
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+    .postcard-icon:hover {
+      color: var(--coral);
+    }
+
+    .postcard-icon svg {
+      width: 100%;
+      height: 100%;
+      fill: currentColor;
+    }
+
+    .postcard-host {
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--coral);
+    }
+
+    /* Itinerary Intro Card */
+    .itinerary-intro-card {
+      display: flex;
+      gap: 0;
+      background: var(--coral);
+      border-radius: var(--radius-lg);
+      margin-bottom: 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .itinerary-intro-content {
+      flex: 1;
+      padding: 32px;
+    }
+
+    .itinerary-intro-description {
+      font-size: 14px;
+      line-height: 1.85;
+      color: var(--white);
+    }
+
+    .itinerary-intro-description p {
+      margin-bottom: 20px;
+    }
+
+    .itinerary-intro-description p:last-child {
+      margin-bottom: 0;
+    }
+
+    .itinerary-intro-nav {
+      flex: 0 0 280px;
+      background: transparent;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .intro-section-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 16px;
+      background: rgba(255, 255, 255, 0.4);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-align: left;
+      text-decoration: none;
+    }
+
+    .intro-section-link:hover {
+      background: rgba(255, 255, 255, 0.6);
+    }
+
+    .intro-section-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--coral-dark);
+      transition: color 0.2s;
+    }
+
+    .intro-section-link:hover .intro-section-title {
+      color: var(--dark);
+    }
+
+    .intro-section-arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 22px;
+      flex-shrink: 0;
+    }
+
+    .intro-section-arrow svg {
+      width: 16px;
+      height: 22px;
+      stroke: var(--coral-dark);
+      fill: none;
+      transition: stroke 0.2s;
+    }
+
+    .intro-section-link:hover .intro-section-arrow svg {
+      stroke: var(--dark);
+    }
+
+    /* Itinerary - Sticky Stacked Cards */
+    .itinerary-container {
+      position: relative;
+      padding-bottom: 80px; /* space for CTA bar */
+    }
+
+    .itinerary-day {
+      position: sticky;
+      top: 94px;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      margin-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .itinerary-day:nth-child(1) { z-index: 1; }
+    .itinerary-day:nth-child(2) { z-index: 2; }
+    .itinerary-day:nth-child(3) { z-index: 3; }
+    .itinerary-day:nth-child(4) { z-index: 4; }
+    .itinerary-day:nth-child(5) { z-index: 5; }
+    .itinerary-day:nth-child(6) { z-index: 6; }
+    .itinerary-day:nth-child(7) { z-index: 7; }
+
+    .itinerary-day-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 24px;
+      background: linear-gradient(135deg, var(--coral) 0%, var(--coral-dark) 100%);
+      color: var(--white);
+    }
+
+    .itinerary-day-number {
+      width: 48px;
+      height: 48px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .itinerary-day-info h3 {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+
+    .itinerary-day-info span {
+      font-size: 10px;
+      opacity: 0.8;
+    }
+
+    .itinerary-day-content {
+      padding: 24px;
+    }
+
+    .itinerary-day-image {
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      border-radius: var(--radius-md);
+      margin-bottom: 16px;
+    }
+
+    .itinerary-day-description {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    /* Tab Badges */
+    .tab-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 6px;
+      padding: 2px 8px;
+      font-size: 10px;
+      font-weight: 500;
+      border-radius: var(--radius-pill);
+      background: transparent;
+      color: var(--coral);
+      opacity: 0.7;
+    }
+
+    .tab.active .tab-badge {
+      background: rgba(255, 255, 255, 0.2);
+      color: var(--white);
+      opacity: 1;
+    }
+
+    @media (max-width: 768px) {
+      .tab-badge {
+        font-size: 9px;
+        padding: 2px 6px;
+        margin-left: 4px;
+      }
+    }
+
+    /* Terms - Key Highlights Bar */
+    .terms-highlights-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+      padding: 16px;
+      background: var(--white);
+      border-radius: var(--radius-md);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .terms-highlight-pill {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: var(--coral-light);
+      border: 1px solid rgba(224, 112, 85, 0.2);
+      border-radius: var(--radius-pill);
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--dark);
+    }
+
+    .terms-highlight-pill svg {
+      width: 14px;
+      height: 14px;
+      fill: var(--coral);
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 768px) {
+      .terms-highlights-bar {
+        gap: 8px;
+        padding: 12px;
+      }
+
+      .terms-highlight-pill {
+        padding: 6px 10px;
+        font-size: 10px;
+      }
+
+      .terms-highlight-pill svg {
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    /* Terms - Sticky Stacked Cards */
+    .terms-container {
+      position: relative;
+      padding-bottom: 80px; /* space for CTA bar */
+    }
+
+    .terms-card {
+      position: sticky;
+      top: 94px;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      margin-bottom: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    .terms-card:nth-child(1) { z-index: 1; }
+    .terms-card:nth-child(2) { z-index: 2; }
+    .terms-card:nth-child(3) { z-index: 3; }
+    .terms-card:nth-child(4) { z-index: 4; }
+    .terms-card:nth-child(5) { z-index: 5; }
+    .terms-card:nth-child(6) { z-index: 6; }
+
+    .terms-card-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 24px;
+      background: linear-gradient(135deg, var(--coral) 0%, var(--coral-dark) 100%);
+      color: var(--white);
+    }
+
+    .terms-card-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .terms-card-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--white);
+    }
+
+    .terms-card-header h3 {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .terms-card-content {
+      padding: 20px;
+    }
+
+    .terms-card-content p {
+      font-size: 12px;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .terms-card-content ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .terms-card-content li {
+      font-size: 12px;
+      line-height: 1.6;
+      color: #555;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--cream);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .terms-card-content li:last-child {
+      border-bottom: none;
+    }
+
+    .terms-card-content li::before {
+      content: "•";
+      color: var(--coral);
+      font-weight: bold;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--blue-brand);
+      color: var(--white);
+      padding: 24px 32px;
+      margin-top: 40px;
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-width: 160px;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-logo-icon {
+      width: 36px;
+      height: 36px;
+      border: 1.5px solid var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-logo-icon svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--white);
+    }
+
+    .footer-tagline {
+      font-family: 'Lora', serif;
+      font-style: italic;
+      font-size: 13px;
+      line-height: 1.25;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 5px;
+      margin-top: 4px;
+    }
+
+    .footer-social a {
+      width: 22px;
+      height: 22px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-social svg {
+      width: 10px;
+      height: 10px;
+      fill: var(--white);
+    }
+
+    .footer-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .footer-newsletter-btn {
+      background: var(--coral);
+      color: var(--white);
+      border: none;
+      padding: 8px 16px;
+      border-radius: var(--radius-pill);
+      font-size: 9px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .footer-links-row {
+      display: flex;
+      gap: 28px;
+    }
+
+    .footer-links-col {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .footer-links-title {
+      font-size: 9px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .footer-link {
+      font-size: 9px;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+    }
+
+    /* Section Navigation Buttons */
+    .section-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 0 20px;
+    }
+
+    .section-nav.section-nav-start {
+      justify-content: flex-start;
+    }
+
+    .section-nav.section-nav-end {
+      justify-content: flex-end;
+    }
+
+    .section-nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: var(--radius-pill);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+
+    .section-nav-btn.primary {
+      background: var(--coral);
+      color: var(--white);
+      border: none;
+    }
+
+    .section-nav-btn.primary:hover {
+      background: var(--coral-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(224, 112, 85, 0.3);
+    }
+
+    .section-nav-btn.secondary {
+      background: var(--white);
+      color: var(--dark);
+      border: 1.5px solid rgba(0, 0, 0, 0.15);
+    }
+
+    .section-nav-btn.secondary:hover {
+      border-color: var(--coral);
+      color: var(--coral);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .section-nav-btn svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    .section-nav-btn.secondary svg {
+      transform: rotate(180deg);
+    }
+
+    .section-nav-divider {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .section-nav {
+        padding: 32px 0 16px;
+      }
+
+      .section-nav-btn {
+        padding: 10px 16px;
+        font-size: 11px;
+        gap: 6px;
+      }
+
+      .section-nav-btn svg {
+        width: 14px;
+        height: 14px;
+      }
+    }
+
+    /* Sticky Bottom CTA Bar */
+    .sticky-cta-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: var(--white);
+      box-shadow: 0 -2px 12px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      z-index: 200;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .sticky-cta-bar.visible {
+      transform: translateY(0);
+    }
+
+    .sticky-cta-price {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--dark);
+    }
+
+    .sticky-cta-price span {
+      color: var(--coral);
+    }
+
+    .sticky-cta-bar .btn {
+      padding: 10px 24px;
+      font-size: 12px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .postcards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      /* ========================================
+         HEADER MOBILE
+         ======================================== */
+      .header {
+        padding: 8px 16px;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .logo-text {
+        font-size: 9px;
+      }
+
+      .header .btn-primary {
+        padding: 5px 12px;
+        font-size: 9px;
+      }
+
+      /* ========================================
+         HERO SECTION MOBILE
+         ======================================== */
+      .hero {
+        height: auto;
+        min-height: 400px;
+        padding: 20px 16px;
+        margin: 0 12px;
+      }
+
+      .hero-tags {
+        flex-wrap: wrap;
+        gap: 6px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding-bottom: 4px;
+      }
+
+      .hero-tags::-webkit-scrollbar {
+        display: none;
+      }
+
+      .hero-tag {
+        padding: 5px 10px;
+        font-size: 8px;
+        flex-shrink: 0;
+      }
+
+      .hero-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+
+      .hero-content {
+        max-width: 100%;
+      }
+
+      .hero-headline {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+      }
+
+      .hero-description {
+        font-size: 11px;
+        line-height: 1.5;
+        margin-bottom: 16px;
+        max-width: 100%;
+      }
+
+      .hero-actions {
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .hero-actions .btn {
+        padding: 6px 12px;
+        font-size: 9px;
+      }
+
+      .hero-stats {
+        width: 100%;
+        justify-content: space-between;
+        gap: 12px;
+        padding-top: 16px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+      }
+
+      .hero-stat {
+        align-items: center;
+        text-align: center;
+      }
+
+      .hero-stat-value {
+        font-size: 16px;
+      }
+
+      .hero-stat-label {
+        font-size: 8px;
+      }
+
+      /* ========================================
+         TABS MOBILE
+         ======================================== */
+      .tabs-section {
+        padding: 0;
+        top: 40px;
+        background: var(--cream);
+      }
+
+      .tab {
+        padding: 12px 8px;
+        font-size: 11px;
+      }
+
+      .tab-badge {
+        font-size: 8px;
+        padding: 2px 5px;
+        margin-left: 3px;
+      }
+
+      /* ========================================
+         TAB CONTENT MOBILE
+         ======================================== */
+      .tab-content {
+        padding: 16px;
+      }
+
+      /* ========================================
+         ITINERARY MOBILE
+         ======================================== */
+      .itinerary-intro-card {
+        flex-direction: column;
+      }
+
+      .itinerary-intro-content {
+        padding: 24px 20px;
+      }
+
+      .itinerary-intro-description {
+        font-size: 13px;
+        line-height: 1.75;
+      }
+
+      .itinerary-intro-description p {
+        margin-bottom: 16px;
+      }
+
+      .itinerary-intro-nav {
+        flex: none;
+        width: 100%;
+        padding: 20px;
+        border-left: none;
+        border-top: 1px solid rgba(255,255,255,0.2);
+        gap: 8px;
+      }
+
+      .intro-section-link {
+        padding: 12px 14px;
+      }
+
+      .intro-section-title {
+        font-size: 13px;
+      }
+
+      .intro-section-arrow {
+        width: 14px;
+        height: 18px;
+      }
+
+      .intro-section-arrow svg {
+        width: 14px;
+        height: 18px;
+      }
+
+      .itinerary-container {
+        padding-bottom: 70px;
+      }
+
+      .itinerary-day {
+        margin-bottom: 16px;
+        border-radius: var(--radius-md);
+        top: 90px;
+      }
+
+      .itinerary-day-header {
+        padding: 16px;
+        gap: 12px;
+      }
+
+      .itinerary-day-number {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 10px;
+      }
+
+      .itinerary-day-info h3 {
+        font-size: 15px;
+      }
+
+      .itinerary-day-info span {
+        font-size: 9px;
+      }
+
+      .itinerary-day-content {
+        padding: 16px;
+      }
+
+      .itinerary-day-image {
+        height: 160px;
+        border-radius: var(--radius-md);
+        margin-bottom: 12px;
+      }
+
+      .itinerary-day-description {
+        font-size: 12px;
+        line-height: 1.6;
+      }
+
+      /* ========================================
+         POSTCARDS GRID MOBILE
+         ======================================== */
+      .postcards-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .postcard-card {
+        height: 380px;
+      }
+
+      .postcard-card-content {
+        padding: 14px;
+      }
+
+      .postcard-breadcrumb {
+        font-size: 7px;
+      }
+
+      .postcard-title {
+        font-size: 18px;
+        margin-bottom: 12px;
+      }
+
+      .postcard-stats {
+        gap: 12px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+      }
+
+      .postcard-stat-value {
+        font-size: 13px;
+      }
+
+      .postcard-stat-label {
+        font-size: 7px;
+      }
+
+      .postcard-tags {
+        gap: 4px;
+        margin-bottom: 10px;
+      }
+
+      .postcard-tag {
+        font-size: 7px;
+        padding: 3px 6px;
+      }
+
+      .postcard-badge {
+        font-size: 6px;
+        padding: 3px 6px;
+        top: 10px;
+        right: 10px;
+      }
+
+      .postcard-cta .btn {
+        padding: 8px;
+        font-size: 10px;
+      }
+
+      /* ========================================
+         TERMS MOBILE
+         ======================================== */
+      .terms-highlights-bar {
+        gap: 8px;
+        padding: 12px;
+      }
+
+      .terms-highlight-pill {
+        padding: 6px 10px;
+        font-size: 10px;
+      }
+
+      .terms-highlight-pill svg {
+        width: 12px;
+        height: 12px;
+      }
+
+      .terms-container {
+        padding-bottom: 70px;
+      }
+
+      .terms-card {
+        top: 90px;
+      }
+
+      .terms-card-header {
+        padding: 16px;
+        gap: 12px;
+      }
+
+      .terms-card-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+      }
+
+      .terms-card-icon svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      .terms-card-header h3 {
+        font-size: 15px;
+      }
+
+      .terms-card-content {
+        padding: 16px;
+      }
+
+      .terms-card-content p,
+      .terms-card-content li {
+        font-size: 11px;
+      }
+
+      /* ========================================
+         STICKY CTA BAR MOBILE
+         ======================================== */
+      .sticky-cta-bar {
+        padding: 0 16px;
+        height: 56px;
+        gap: 12px;
+      }
+
+      .sticky-cta-price {
+        font-size: 13px;
+        flex-shrink: 1;
+        min-width: 0;
+      }
+
+      .sticky-cta-bar .btn {
+        padding: 8px 16px;
+        font-size: 11px;
+        flex-shrink: 0;
+      }
+
+      /* ========================================
+         FOOTER MOBILE
+         ======================================== */
+      .footer {
+        padding: 20px 16px;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+      }
+
+      .footer-brand {
+        align-items: center;
+        max-width: 100%;
+      }
+
+      .footer-logo {
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .footer-tagline {
+        text-align: center;
+      }
+
+      .footer-links-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .footer-links-col {
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        min-height: 360px;
+        margin: 0 8px;
+        padding: 16px 12px;
+      }
+
+      .hero-headline {
+        font-size: 22px;
+      }
+
+      .hero-description {
+        font-size: 10px;
+      }
+
+      .hero-stats {
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .hero-stat {
+        flex: 1;
+        min-width: 80px;
+      }
+
+      .tab {
+        padding: 10px 6px;
+        font-size: 9px;
+      }
+
+      .tab-badge {
+        font-size: 7px;
+        padding: 1px 4px;
+      }
+
+      .postcard-card {
+        height: 350px;
+      }
+
+      .itinerary-day {
+        top: 85px;
+      }
+
+      .terms-card {
+        top: 85px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="/" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      </div>
+      <span class="logo-text">POSTCARD TRAVEL CLUB</span>
+    </a>
+    <nav class="nav">
+      <a href="#" class="nav-link">Boutique Stays</a>
+      <a href="#" class="nav-link">City guides</a>
+      <a href="#" class="nav-link">StarLife Memberships</a>
+    </nav>
+    <a href="#" class="btn btn-primary">All Experiences</a>
+  </header>
+
+  <!-- Hero -->
+  <div class="hero-section">
+    <section class="hero">
+      <!-- Top Tags -->
+      <div class="hero-tags">
+        <span class="hero-tag">Hot Springs</span>
+        <span class="hero-tag">Mountain Trails</span>
+        <span class="hero-tag">Lakeside Retreat</span>
+      </div>
+
+      <!-- Bottom Content -->
+      <div class="hero-bottom">
+        <div class="hero-content">
+          <h1 class="hero-headline">Taiwan: Hot Springs to High Mountains</h1>
+          <p class="hero-description">A seven-day journey through Taiwan's most enchanting landscapes — from steaming volcanic hot springs to the serene shores of Sun Moon Lake.</p>
+          <div class="hero-actions">
+            <a href="#" class="btn btn-outline-dark-hero">
+              <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+              Save to Diary
+            </a>
+            <a href="#" class="btn btn-outline-dark-hero">
+              <svg viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>
+              Share
+            </a>
+            <a href="#" class="btn btn-primary">Inquire now</a>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-value">7 / 6</span>
+            <span class="hero-stat-label">Days / Nights</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value">12</span>
+            <span class="hero-stat-label">Experiences</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-value price">US$ 2,450</span>
+            <span class="hero-stat-label">Per Person</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs-section">
+    <div class="tabs">
+      <button class="tab active" data-tab="postcards">Postcard <span class="tab-badge">6</span></button>
+      <button class="tab" data-tab="itinerary">Itinerary <span class="tab-badge">7 days</span></button>
+      <button class="tab" data-tab="terms">Terms and conditions <span class="tab-badge">5</span></button>
+    </div>
+  </div>
+
+  <!-- Postcards Tab -->
+  <div class="tab-content active" id="postcards">
+    <h2 class="section-title">Postcard Experiences</h2>
+    <div class="postcards-grid">
+      <!-- Card 1 -->
+      <div class="postcard-card">
+        <div class="postcard-card-image" style="background-image: url('https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=600')"></div>
+        <div class="postcard-card-content">
+          <span class="postcard-location">Kanha, India</span>
+          <h3 class="postcard-title">Where the Stripes walk at dawn.</h3>
+          <span class="postcard-tag">Tiger Safari</span>
+          <div class="postcard-footer">
+            <div class="postcard-icons">
+              <span class="postcard-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 6h-2V4c0-1.1-.9-2-2-2H7c-1.1 0-2 .9-2 2v2H3c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM7 4h10v2H7V4zm14 15H3V8h18v11z"/></svg>
+              </span>
+              <span class="postcard-icon">
+                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+              </span>
+            </div>
+            <span class="postcard-host">Postcard Experience</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="postcard-card">
+        <div class="postcard-card-image" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600')"></div>
+        <div class="postcard-card-content">
+          <span class="postcard-location">Siem Reap, Cambodia</span>
+          <h3 class="postcard-title">Temples at the edge of time.</h3>
+          <span class="postcard-tag">Heritage</span>
+          <div class="postcard-footer">
+            <div class="postcard-icons">
+              <span class="postcard-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 6h-2V4c0-1.1-.9-2-2-2H7c-1.1 0-2 .9-2 2v2H3c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM7 4h10v2H7V4zm14 15H3V8h18v11z"/></svg>
+              </span>
+              <span class="postcard-icon">
+                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+              </span>
+            </div>
+            <span class="postcard-host">Postcard Experience</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="postcard-card">
+        <div class="postcard-card-image" style="background-image: url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600')"></div>
+        <div class="postcard-card-content">
+          <span class="postcard-location">Kyoto, Japan</span>
+          <h3 class="postcard-title">Whispers of ancient gardens.</h3>
+          <span class="postcard-tag">Zen Gardens</span>
+          <div class="postcard-footer">
+            <div class="postcard-icons">
+              <span class="postcard-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 6h-2V4c0-1.1-.9-2-2-2H7c-1.1 0-2 .9-2 2v2H3c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM7 4h10v2H7V4zm14 15H3V8h18v11z"/></svg>
+              </span>
+              <span class="postcard-icon">
+                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+              </span>
+            </div>
+            <span class="postcard-host">Postcard Experience</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="postcard-card">
+        <div class="postcard-card-image" style="background-image: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600')"></div>
+        <div class="postcard-card-content">
+          <span class="postcard-location">Santorini, Greece</span>
+          <h3 class="postcard-title">Where the sun meets the sea.</h3>
+          <span class="postcard-tag">Island Life</span>
+          <div class="postcard-footer">
+            <div class="postcard-icons">
+              <span class="postcard-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 6h-2V4c0-1.1-.9-2-2-2H7c-1.1 0-2 .9-2 2v2H3c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM7 4h10v2H7V4zm14 15H3V8h18v11z"/></svg>
+              </span>
+              <span class="postcard-icon">
+                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+              </span>
+            </div>
+            <span class="postcard-host">Postcard Experience</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="postcard-card">
+        <div class="postcard-card-image" style="background-image: url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=600')"></div>
+        <div class="postcard-card-content">
+          <span class="postcard-location">Marrakech, Morocco</span>
+          <h3 class="postcard-title">Colors of the ancient medina.</h3>
+          <span class="postcard-tag">Souks</span>
+          <div class="postcard-footer">
+            <div class="postcard-icons">
+              <span class="postcard-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 6h-2V4c0-1.1-.9-2-2-2H7c-1.1 0-2 .9-2 2v2H3c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM7 4h10v2H7V4zm14 15H3V8h18v11z"/></svg>
+              </span>
+              <span class="postcard-icon">
+                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+              </span>
+            </div>
+            <span class="postcard-host">Postcard Experience</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="postcard-card">
+        <div class="postcard-card-image" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600')"></div>
+        <div class="postcard-card-content">
+          <span class="postcard-location">Patagonia, Chile</span>
+          <h3 class="postcard-title">At the end of the world.</h3>
+          <span class="postcard-tag">Glaciers</span>
+          <div class="postcard-footer">
+            <div class="postcard-icons">
+              <span class="postcard-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 6h-2V4c0-1.1-.9-2-2-2H7c-1.1 0-2 .9-2 2v2H3c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zM7 4h10v2H7V4zm14 15H3V8h18v11z"/></svg>
+              </span>
+              <span class="postcard-icon">
+                <svg viewBox="0 0 24 24"><path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+              </span>
+            </div>
+            <span class="postcard-host">Postcard Experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation to next section -->
+    <div class="section-nav section-nav-end">
+      <button class="section-nav-btn primary" data-goto="itinerary">
+        View Itinerary
+        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Itinerary Tab -->
+  <div class="tab-content" id="itinerary">
+    <h2 class="section-title">Day wise Itinerary</h2>
+    <!-- Intro Card -->
+    <div class="itinerary-intro-card">
+      <div class="itinerary-intro-content">
+        <div class="itinerary-intro-description">
+          <p>This DX Journeys itinerary takes you on an unforgettable 7-day exploration of Taiwan's natural wonders, from the therapeutic hot springs of Beitou to the mystical beauty of Sun Moon Lake.</p>
+          <p>Begin in Taipei's volcanic outskirts, where ancient hot spring traditions meet modern wellness. Journey through dramatic coastal geology at Yehliu and the lantern-lit streets of Jiufen, before ascending into the misty peaks of Yangmingshan National Park.</p>
+          <p>Your final days unfold at Sun Moon Lake, Taiwan's largest body of water, where indigenous Thao culture, pristine hiking trails, and serene sunrises await. The journey concludes with a peaceful morning in the forest at Xitou before your departure.</p>
+        </div>
+      </div>
+      <div class="itinerary-intro-nav">
+        <button class="intro-section-link" data-day="1">
+          <span class="intro-section-title">Day 1 · Arrival in Beitou</span>
+          <span class="intro-section-arrow"><svg viewBox="0 0 20 27"><path d="M19 14.9423L9.76923 26M9.76923 26L0.999999 14.9423M9.76923 26L9.76923 0.999999" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+        <button class="intro-section-link" data-day="2">
+          <span class="intro-section-title">Day 2 · Yehliu & Jiufen</span>
+          <span class="intro-section-arrow"><svg viewBox="0 0 20 27"><path d="M19 14.9423L9.76923 26M9.76923 26L0.999999 14.9423M9.76923 26L9.76923 0.999999" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+        <button class="intro-section-link" data-day="3">
+          <span class="intro-section-title">Day 3 · Yangmingshan</span>
+          <span class="intro-section-arrow"><svg viewBox="0 0 20 27"><path d="M19 14.9423L9.76923 26M9.76923 26L0.999999 14.9423M9.76923 26L9.76923 0.999999" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+        <button class="intro-section-link" data-day="4">
+          <span class="intro-section-title">Day 4 · Sun Moon Lake</span>
+          <span class="intro-section-arrow"><svg viewBox="0 0 20 27"><path d="M19 14.9423L9.76923 26M9.76923 26L0.999999 14.9423M9.76923 26L9.76923 0.999999" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+        <button class="intro-section-link" data-day="5">
+          <span class="intro-section-title">Day 5 · Lake Activities</span>
+          <span class="intro-section-arrow"><svg viewBox="0 0 20 27"><path d="M19 14.9423L9.76923 26M9.76923 26L0.999999 14.9423M9.76923 26L9.76923 0.999999" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+        <button class="intro-section-link" data-day="6">
+          <span class="intro-section-title">Day 6 · Xitou Forest</span>
+          <span class="intro-section-arrow"><svg viewBox="0 0 20 27"><path d="M19 14.9423L9.76923 26M9.76923 26L0.999999 14.9423M9.76923 26L9.76923 0.999999" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+        <button class="intro-section-link" data-day="7">
+          <span class="intro-section-title">Day 7 · Departure</span>
+          <span class="intro-section-arrow"><svg viewBox="0 0 20 27"><path d="M19 14.9423L9.76923 26M9.76923 26L0.999999 14.9423M9.76923 26L9.76923 0.999999" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="itinerary-container">
+      <!-- Day 1 -->
+      <div class="itinerary-day" data-day="1">
+        <div class="itinerary-day-header">
+          <div class="itinerary-day-number">01</div>
+          <div class="itinerary-day-info">
+            <h3>Arrival in Beitou</h3>
+            <span>May 17 · Hot Springs Welcome</span>
+          </div>
+        </div>
+        <div class="itinerary-day-content">
+          <div class="itinerary-day-image" style="background-image: url('https://images.unsplash.com/photo-1480796927426-f609979314bd?w=800')"></div>
+          <p class="itinerary-day-description">Arrive at Taiwan Taoyuan International Airport where your DX Journeys guide awaits. Transfer to the historic hot spring district of Beitou, nestled in the volcanic hills north of Taipei. Check into your traditional Japanese-style ryokan, where mineral-rich hot springs flow directly into private baths. Spend the afternoon exploring Beitou Hot Spring Museum and the nearby Thermal Valley, where sulfurous steam rises dramatically from jade-green waters. Evening welcome dinner featuring local Taiwanese cuisine.</p>
+        </div>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="itinerary-day" data-day="2">
+        <div class="itinerary-day-header">
+          <div class="itinerary-day-number">02</div>
+          <div class="itinerary-day-info">
+            <h3>Yehliu & Jiufen</h3>
+            <span>May 18 · Coastal Wonders</span>
+          </div>
+        </div>
+        <div class="itinerary-day-content">
+          <div class="itinerary-day-image" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800')"></div>
+          <p class="itinerary-day-description">Journey along Taiwan's dramatic northeast coast to Yehliu Geopark, where millennia of wind and sea have carved fantastical rock formations including the famous Queen's Head. Continue to the hillside mining town of Jiufen, said to have inspired the spirit world in Miyazaki's "Spirited Away." Wander through narrow alleyways lined with red lanterns, sampling local treats like taro balls and herbal tea. Watch sunset paint the Pacific gold before returning to Beitou for an evening hot spring soak.</p>
+        </div>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="itinerary-day" data-day="3">
+        <div class="itinerary-day-header">
+          <div class="itinerary-day-number">03</div>
+          <div class="itinerary-day-info">
+            <h3>Yangmingshan National Park</h3>
+            <span>May 19 · Mountain Trails</span>
+          </div>
+        </div>
+        <div class="itinerary-day-content">
+          <div class="itinerary-day-image" style="background-image: url('https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800')"></div>
+          <p class="itinerary-day-description">A full day exploring Yangmingshan National Park, Taiwan's most accessible volcanic landscape. Begin with a morning hike through meadows of silvergrass to Qixing Mountain, the highest peak in the Taipei basin. Descend to Xiaoyoukeng, where fumaroles vent sulfurous gases beside bubbling mud pots. Afternoon tea at a hillside café with panoramic views of Taipei below. Optional visit to a calla lily farm (seasonal) before a farewell dinner in Beitou.</p>
+        </div>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="itinerary-day" data-day="4">
+        <div class="itinerary-day-header">
+          <div class="itinerary-day-number">04</div>
+          <div class="itinerary-day-info">
+            <h3>Journey to Sun Moon Lake</h3>
+            <span>May 20 · Into the Mountains</span>
+          </div>
+        </div>
+        <div class="itinerary-day-content">
+          <div class="itinerary-day-image" style="background-image: url('https://images.unsplash.com/photo-1470004914212-05527e49370b?w=800')"></div>
+          <p class="itinerary-day-description">Depart Beitou for the scenic drive south to Sun Moon Lake, Taiwan's largest body of water. Stop en route at Puli, known as the geographic center of Taiwan, to visit a paper-making village and sample the region's famous rice wine. Arrive at your lakeside resort in the afternoon with time to settle in before sunset. Evening boat cruise across the glassy waters as the surrounding mountains turn purple in the fading light. Dinner at the resort featuring Thao indigenous cuisine.</p>
+        </div>
+      </div>
+
+      <!-- Day 5 -->
+      <div class="itinerary-day" data-day="5">
+        <div class="itinerary-day-header">
+          <div class="itinerary-day-number">05</div>
+          <div class="itinerary-day-info">
+            <h3>Sun Moon Lake Activities</h3>
+            <span>May 21 · Lake & Culture</span>
+          </div>
+        </div>
+        <div class="itinerary-day-content">
+          <div class="itinerary-day-image" style="background-image: url('https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=800')"></div>
+          <p class="itinerary-day-description">Wake early for the lake's famous sunrise, best viewed from Xiangshan Visitor Center. After breakfast, explore the area by bicycle on the lakeside cycling path, one of the most beautiful in Asia. Visit Wenwu Temple, dedicated to Confucius and the God of War, perched on a hillside with commanding lake views. Afternoon at leisure — choose from paddleboarding, a tea tasting experience with local Assam tea, or simply relaxing on the resort grounds. Evening free to explore the waterfront promenade.</p>
+        </div>
+      </div>
+
+      <!-- Day 6 -->
+      <div class="itinerary-day" data-day="6">
+        <div class="itinerary-day-header">
+          <div class="itinerary-day-number">06</div>
+          <div class="itinerary-day-info">
+            <h3>Xitou Forest</h3>
+            <span>May 22 · Ancient Trees</span>
+          </div>
+        </div>
+        <div class="itinerary-day-content">
+          <div class="itinerary-day-image" style="background-image: url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=800')"></div>
+          <p class="itinerary-day-description">Morning departure for Xitou Nature Education Area, a pristine forest reserve at 1,150 meters elevation. Walk among towering bamboo groves and ancient cypress trees, including a 2,800-year-old sacred tree. The elevated Skywalk offers a bird's-eye view of the canopy below. Lunch at the Xitou Monster Village, a whimsical Japanese-themed hamlet at the forest entrance. Return to Sun Moon Lake for a final evening, with a farewell dinner celebrating the journey's highlights.</p>
+        </div>
+      </div>
+
+      <!-- Day 7 -->
+      <div class="itinerary-day" data-day="7">
+        <div class="itinerary-day-header">
+          <div class="itinerary-day-number">07</div>
+          <div class="itinerary-day-info">
+            <h3>Departure</h3>
+            <span>May 23 · Until Next Time</span>
+          </div>
+        </div>
+        <div class="itinerary-day-content">
+          <div class="itinerary-day-image" style="background-image: url('https://images.unsplash.com/photo-1542640244-7e672d6cef4e?w=800')"></div>
+          <p class="itinerary-day-description">Final morning at leisure on the lake. Depending on your flight time, enjoy an optional sunrise walk to Ci'en Pagoda, built by Chiang Kai-shek in memory of his mother, with sweeping views across the water. Private transfer to Taichung High Speed Rail Station or Taiwan Taoyuan International Airport, carrying memories of steaming hot springs, misty mountains, and the tranquil beauty of Taiwan's heartland.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation to next section -->
+    <div class="section-nav">
+      <button class="section-nav-btn secondary" data-action="back-to-tabs">
+        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+        Back to Tabs
+      </button>
+            <button class="section-nav-btn primary" data-goto="terms">
+        View Terms & Conditions
+        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Terms Tab -->
+  <div class="tab-content" id="terms">
+    <h2 class="section-title">Terms and Conditions</h2>
+
+    <div class="terms-container">
+      <!-- Inclusions -->
+      <div class="terms-card">
+        <div class="terms-card-header">
+          <div class="terms-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          </div>
+          <h3>What's Included</h3>
+        </div>
+        <div class="terms-card-content">
+          <ul>
+            <li>6 nights accommodation (3 nights Beitou ryokan, 3 nights Sun Moon Lake resort)</li>
+            <li>Daily breakfast at hotels</li>
+            <li>Welcome dinner (Day 1), farewell dinner (Day 6), and 2 lunches as noted</li>
+            <li>Private air-conditioned vehicle for all transfers and excursions</li>
+            <li>English-speaking DX Journeys guide throughout</li>
+            <li>All entrance fees (Yehliu Geopark, Yangmingshan, temples, Xitou)</li>
+            <li>Sunset boat cruise on Sun Moon Lake</li>
+            <li>Bicycle rental at Sun Moon Lake</li>
+            <li>Airport transfers on arrival and departure</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Exclusions -->
+      <div class="terms-card">
+        <div class="terms-card-header">
+          <div class="terms-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          </div>
+          <h3>What's Not Included</h3>
+        </div>
+        <div class="terms-card-content">
+          <ul>
+            <li>International flights to/from Taiwan</li>
+            <li>Travel insurance (strongly recommended)</li>
+            <li>Taiwan entry requirements (check current visa policy)</li>
+            <li>Meals not mentioned in the itinerary</li>
+            <li>Personal expenses and gratuities</li>
+            <li>Optional activities (paddleboarding, tea tasting add-ons)</li>
+            <li>Alcoholic beverages</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Booking Policy -->
+      <div class="terms-card">
+        <div class="terms-card-header">
+          <div class="terms-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg>
+          </div>
+          <h3>Booking & Payment</h3>
+        </div>
+        <div class="terms-card-content">
+          <ul>
+            <li>30% non-refundable deposit required to confirm booking</li>
+            <li>Balance due 45 days before departure</li>
+            <li>Payments accepted via bank transfer or major credit card</li>
+            <li>Prices quoted in USD; local payments in TWD at prevailing rate</li>
+            <li>Group size: Minimum 2, Maximum 8 travelers per departure</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Cancellation -->
+      <div class="terms-card">
+        <div class="terms-card-header">
+          <div class="terms-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          </div>
+          <h3>Cancellation Policy</h3>
+        </div>
+        <div class="terms-card-content">
+          <ul>
+            <li>60+ days before departure: Full refund minus deposit</li>
+            <li>45-59 days before departure: 50% refund</li>
+            <li>30-44 days before departure: 25% refund</li>
+            <li>Less than 30 days: No refund</li>
+            <li>Trip interruption: No refund for unused portions</li>
+            <li>We strongly recommend comprehensive travel insurance</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Important Notes -->
+      <div class="terms-card">
+        <div class="terms-card-header">
+          <div class="terms-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          </div>
+          <h3>Important Notes</h3>
+        </div>
+        <div class="terms-card-content">
+          <ul>
+            <li>Valid passport required with 6+ months validity beyond travel dates</li>
+            <li>Moderate fitness level required for hiking portions</li>
+            <li>Hot spring etiquette: Tattoo policies vary by facility</li>
+            <li>Best season: March to May, September to November</li>
+            <li>Itinerary may be adjusted due to weather or local conditions</li>
+            <li>Single supplement: +$650 USD (subject to availability)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation to next section -->
+    <div class="section-nav section-nav-start">
+      <button class="section-nav-btn secondary" data-action="back-to-tabs">
+        <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+        Back to Tabs
+      </button>
+    </div>
+  </div>
+
+  <!-- Sticky Bottom CTA Bar -->
+  <div class="sticky-cta-bar" id="stickyCta">
+    <div class="sticky-cta-price"><span>US$ 2,450</span> per person</div>
+    <a href="#" class="btn btn-primary">Inquire Now</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <div class="footer-tagline">Collect Postcards,<br>Make Memories.</div>
+        </div>
+        <div class="footer-social">
+          <a href="#"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></a>
+          <a href="#"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="#"><svg viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+          <a href="#"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-center">
+        <button class="footer-newsletter-btn">Subscribe to the Newsletter</button>
+      </div>
+      <div class="footer-links-row">
+        <div class="footer-links-col">
+          <div class="footer-links-title">Our Story</div>
+          <a href="#" class="footer-link">Travel</a>
+          <a href="#" class="footer-link">Concierge</a>
+          <a href="#" class="footer-link">Podcast</a>
+        </div>
+        <div class="footer-links-col">
+          <div class="footer-links-title">Press</div>
+          <a href="#" class="footer-link">Sustainability</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Tab switching
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = tab.dataset.tab;
+
+        // Update tabs
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        // Update content
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        document.getElementById(target).classList.add('active');
+      });
+    });
+
+    // Intro section link click handlers
+    document.querySelectorAll('.intro-section-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const dayNum = link.dataset.day;
+        const targetCard = document.querySelector(`.itinerary-day[data-day="${dayNum}"]`);
+
+        if (targetCard) {
+          const headerOffset = 100;
+          const elementPosition = targetCard.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Section navigation buttons
+    document.querySelectorAll('.section-nav-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetTab = btn.dataset.goto;
+
+        // Switch tab if specified
+        if (targetTab) {
+          const tabButton = document.querySelector(`.tab[data-tab="${targetTab}"]`);
+          if (tabButton) {
+            tabButton.click();
+          }
+        }
+
+        // Scroll to top of content (just below hero)
+        const heroSection = document.querySelector('.hero-section');
+        const scrollTarget = heroSection.offsetTop + heroSection.offsetHeight - 50;
+
+        window.scrollTo({
+          top: scrollTarget,
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Sticky CTA Bar - Show/Hide based on scroll
+    const stickyCta = document.getElementById('stickyCta');
+    const heroSection = document.querySelector('.hero-section');
+
+    function updateStickyCtaVisibility() {
+      const heroBottom = heroSection.getBoundingClientRect().bottom;
+
+      if (heroBottom < 0) {
+        stickyCta.classList.add('visible');
+      } else {
+        stickyCta.classList.remove('visible');
+      }
+    }
+
+    window.addEventListener('scroll', updateStickyCtaVisibility);
+    // Initial check on page load
+    updateStickyCtaVisibility();
+  </script>
+
+</body>
+</html>
